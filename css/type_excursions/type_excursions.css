@@ -1,0 +1,41 @@
+.types_excursions-title {
+  color: #0499dd;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 90px;
+}
+.types_excursions_content-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  row-gap: 40px;
+  flex-wrap: wrap;
+}
+.types_excursions_content-card {
+  display: flex;
+  max-width: 550px;
+}
+.types_excursions_content_card-img {
+  display: inline-block;
+  min-width: 75px;
+  min-height: 75px;
+  margin-right: 20px;
+}
+.types_excursions_content_card-info h3 {
+  color: #0499dd;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.types_excursions_content-text {
+  max-width: 550px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.header_content_info-btn.btn-excursions {
+  margin: 0 auto;
+  margin-bottom: 150px;
+}

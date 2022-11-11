@@ -1,0 +1,36 @@
+@import "./reset.css";
+@import "./header/header.css";
+@import "./excursion/excursion.css";
+@import "./about/about.css";
+@import "./type_excursions/type_excursions.css";
+@import "./gallery/gallery.css";
+@import "./reviews/reviews.css";
+@import "./forms/feedback__form.css";
+@import "./footer/footer.css";
+
+/*----Шрифты----*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap");
+@import url(https://myfonts.ru/myfonts?fonts=mrkindlyjasmineg);
+
+:root {
+  --container-width: 1180px;
+  --container-padding: 30px;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  background-color: #fff;
+
+  /* font-family: 'mr_KindlyJasmineG', arial; */
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  /* border: 2px solid red; */
+}
+
+

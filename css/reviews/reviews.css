@@ -1,0 +1,145 @@
+.reviews {
+  padding-bottom: 100px;
+}
+.container {
+}
+.reviews-cards {
+}
+.reviews-card {
+  display: flex;
+  max-width: 740px;
+  height: 322px;
+  background: #ededed;
+  border-radius: 10px;
+  padding: 38px 45px;
+}
+.reviews-card-img img {
+  max-width: 245px;
+  height: 245px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  border-radius: 10px;
+  margin-right: 28px;
+}
+.reviews-card-info h3 {
+  font-weight: 700;
+  line-height: 17px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+
+.reviews-card-info p {
+  max-width: 395px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #282828;
+}
+
+/* Основные стили */
+
+/* Слайдер */
+.slick-slider {
+  min-width: 0;
+}
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+
+/* Слайд */
+.slick-slide {
+  max-width: 760px;
+}
+/* Слайд активный */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {
+}
+
+/* Точки */
+.slick-dots {
+}
+.slick-dots li {
+}
+.slick-dots button {
+}
+
+/* Конкретный слайдер */
+.reviews-cards {
+  position: relative;
+  padding: 0px 50px;
+}
+
+.reviews-cards .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+}
+.reviews-cards .slick-arrow.slick-prev {
+  left: 0;
+  background: url("../../img/rew/02.svg") 0 0 / 100% no-repeat;
+}
+.reviews-cards .slick-arrow.slick-next {
+  right: 0;
+  background: url("../../img/rew/01.svg") 0 0 / 100% no-repeat;
+}
+.reviews-cards.slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+.reviews-cards .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*расстояние между точками*/
+.reviews-cards .slick-dots li {
+  list-style: none;
+  margin: 0px 20px;
+}
+/*Размер стрелок*/
+.reviews-cards .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #0499dd;
+  border-radius: 50%;
+}
+
+.reviews-cards .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #0499dd;
+}
+
+.slider__item {
+  padding: 2px -5px;
+}
+.slider__item img {
+  max-width: 100%;
+}
+.slider__item.slick-center {
+}
