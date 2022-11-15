@@ -1,28 +1,24 @@
 @import "../main.css";
 .about {
-  /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/
-  /*  url("../../img/about/about-bg.png");*/
-  /*border-radius: 0px 10px 10px 0px;*/
-  /*background-size: cover;*/
-  /**/
-  /*padding-right: calc(*/
-  /*  (100% - var(--container-width)) / 2 + var(--container-padding)*/
-  /*);*/
-  margin-bottom: 150px;
-  position: relative;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../../img/about/about-bg.png");
+
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
+  border-radius: 0 10px 10px 0;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
-.img_about {
-  width: 1071px;
-  height: 749px;
-  /*float: left;*/
-}
+
 .about__content {
-  /*max-width: 1180px;*/
-  /*margin:0 auto ;*/
-  /*position: relative;*/
-  position: absolute;
-  right: 10%;
-  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 136px;
 }
 
 .about__content-title {
@@ -46,4 +42,9 @@
   font-weight: 500;
   line-height: 17px;
   margin-bottom: 20px;
+}
+
+@media(max-width: 500px){
+  .about__content-title {
+    max-height: 600px;}
 }

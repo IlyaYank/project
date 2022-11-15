@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./media.css";
 @import "./header/header.css";
 @import "./excursion/excursion.css";
 @import "./about/about.css";
@@ -17,6 +18,10 @@
   --container-padding: 30px;
 }
 
+.display_none{
+  display: none !important;
+}
+
 body {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -27,10 +32,8 @@ body {
 }
 
 .container {
-  max-width: var(--container-width);
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 var(--container-padding);
+  padding: 0 30px;
   /* border: 2px solid red; */
 }
-
-

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
@@ -12,40 +13,48 @@
     <title>Novo Travel</title>
   </head>
   <body>
-    <header id="header" class="header">
+    <header class="header">
       <!--Header__NAV-->
       <div class="container">
         <!--Header__NAV-->
         <div class="header__nav">
-          <div class="header__nav-logo">
-            <img src="./img/header/logo.svg" alt="Nova Travel" />
-          </div>
-          <nav id="nav" class="header__nav-bar">
+          <a href="#!"
+            ><img
+              class="header__nav-logo"
+              src="./img/header/logo-header.svg"
+              alt="Nova Travel"
+          /></a>
+
+          <nav class="header__nav-bar" id="nav">
             <ul class="header__nav-list">
               <li class="header__nav-item">
                 <a href="#!" class="header__nav_item-list">Главная</a>
               </li>
               <li class="header__nav-item">
-                <a href="#excursion" class="header__nav_item-list">Экскурсии</a>
+                <a href="#!" class="header__nav_item-list">Экскурсии</a>
               </li>
               <li class="header__nav-item">
-                <a href="#about" class="header__nav_item-list">О нас</a>
+                <a href="#!" class="header__nav_item-list">О нас</a>
               </li>
               <li class="header__nav-item">
-                <a href="#types_excursions" class="header__nav_item-list">Виды экскурсий</a>
+                <a href="#!" class="header__nav_item-list">Виды экскурсий</a>
               </li>
               <li class="header__nav-item">
-                <a href="#galery" class="header__nav_item-list">Галерея</a>
+                <a href="#!" class="header__nav_item-list">Галерея</a>
               </li>
               <li class="header__nav-item">
-                <a href="#pictures" class="header__nav_item-list">Отзывы</a>
+                <a href="#!" class="header__nav_item-list">Отзывы</a>
+              </li>
+              <li class="header__nav-item">
+                <a href="#!" class="header__nav_item-list">Контакты </a>
               </li>
             </ul>
-            <button id="nav_button" class="nav_button">
-              <img id="nav_btn_img" src="img/header/NAV.svg" alt="">
+            <button class="nav-button" id="nav-button">
+              <img id="nav-btn-img" src="./img/header/nav-open.svg" alt="" />
             </button>
           </nav>
         </div>
+
         <!--Header__CONTENT-->
         <div class="header__content">
           <div class="header__content-info">
@@ -65,8 +74,9 @@
         </div>
       </div>
     </header>
+
     <!--Excursion-slider-->
-    <section id="excursion" class="excursion">
+    <section class="excursion ">
       <div class="container">
         <div class="excursion__slider">
           <h2 class="excursion__slider-title">Популярные экскурсии</h2>
@@ -169,8 +179,8 @@
     </section>
 
     <!--About-->
-    <section id="about" class="about">
-      <img class="img_about" src="img/about/about-bg.png" alt="" />
+    <section class="about ">
+      <!-- <img class="img_about" src="img/about/about-bg.png" alt="" /> -->
       <div class="container">
         <div class="about__content">
           <div class="about__content-title">
@@ -195,7 +205,7 @@
     </section>
 
     <!--Types of excursions-->
-    <section id="types_excursions" class="types_excursions">
+    <section class="types_excursions ">
       <div class="container">
         <div class="types_excursions-title">
           <h2>Виды экскурсий</h2>
@@ -278,12 +288,12 @@
     </section>
 
     <!--Gallery -->
-    <div id="galery" class="container">
+    <div class="container ">
       <div class="types_excursions-title">
         <h2>Галерея</h2>
       </div>
     </div>
-    <section id="pictures" class="pictures">
+    <section class="pictures ">
       <a class="pictures__img" href="#!">
         <img src="./img/gallery/1.png" alt="Изображение 1" />
       </a>
@@ -311,7 +321,7 @@
     </section>
 
     <!--revirews-->
-    <section id="reviews" class="reviews">
+    <section class="reviews ">
       <div class="container">
         <div class="types_excursions-title">
           <h2>Отзывы</h2>
@@ -442,7 +452,7 @@
     </section>
 
     <!--Forms-->
-    <section id="forms" class="forms">
+    <section class="forms ">
       <div class="container">
         <div class="feedback">
           <div class="feedback__content">
@@ -494,12 +504,13 @@
     </section>
 
     <!--Footer-->
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer ">
       <div class="container">
+        <div class="footer_info-logo">
+          <img src="./img/header/logo-header.svg" alt="Novo Travel" />
+        </div>
         <div class="footer__info">
-          <div class="footer_info-logo">
-            <img src="./img/footer/logo_color.svg" alt="Novo Travel" />
-          </div>
+
           <div class="footer__nav">
             <nav class="footer__nav-bar">
               <ul class="footer__nav-list">
@@ -508,6 +519,18 @@
                 </li>
                 <li class="footer__nav-item">
                   <a href="#!" class="footer__nav_item-list">Экскурсии</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#!" class="footer__nav_item-list">Личный кабинет</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#!" class="footer__nav_item-list">Личный кабинет</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#!" class="footer__nav_item-list">Личный кабинет</a>
+                </li>
+                <li class="footer__nav-item">
+                  <a href="#!" class="footer__nav_item-list">Личный кабинет</a>
                 </li>
                 <li class="footer__nav-item">
                   <a href="#!" class="footer__nav_item-list">Личный кабинет</a>
@@ -550,7 +573,6 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/menu.js"></script>
   </body>
 </html>
 

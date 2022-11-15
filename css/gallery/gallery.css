@@ -56,3 +56,19 @@
   grid-area: img-8;
   /* max-width: 503px; */
 }
+
+@media(max-width: 768px) {
+.pictures__img:nth-of-type(1) {
+  display: none;
+  /* max-width: 503px; */
+}
+.pictures__img:nth-of-type(5) {
+  display: none;
+}
+.pictures__img:nth-of-type(6) {
+  display: none;
+}
+.pictures__img:nth-of-type(7) {
+  display: none;
+}
+}

@@ -1,0 +1,37 @@
+@import "./reset.css";
+
+@media (max-width: 768px) {
+  .header__nav-list {
+    display: none;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  .header__nav-bar.open .header__nav-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #c7c7c7;
+    width: 100%;
+    min-height: 100%;
+
+    z-index: 1;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 40px;
+
+    padding: 40px 30px;
+  }
+
+  .nav-button {
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    right: 30px;
+  }
+}
