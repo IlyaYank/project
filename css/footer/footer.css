@@ -1,12 +1,19 @@
+.footer{
+  margin-top: 30px;
+}
 .footer__info {
   display: flex;
+  font-weight: bold;
+
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
   margin: 30px 0;
 }
-
+.footer-color {
+  color: #000;
+}
 .footer_info-logo{
   display: block;
   margin: 0 auto;
@@ -18,9 +25,11 @@
 .footer__nav-list {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   row-gap: 15px;
   flex-wrap: wrap;
-  width: 300px;
+  /*width: 300px;*/
 }
 .footer__tel-info {
   display: flex;
@@ -40,4 +49,15 @@
 .footer__section-section {
   display: flex;
   justify-content: space-between;
+}
+
+@media(max-width: 420px){
+  .footer__info{
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__tel-info{
+    justify-content: center;
+    align-items: center;
+  }
 }

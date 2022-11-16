@@ -218,3 +218,13 @@
 }
 .slider__item.slick-center {
 }
+
+@media (max-width: 380px) {
+  .excursion__slider-card{
+    padding:0 10px 80px;
+  }
+  .excursion__slider_card-btn{
+    padding: 12px 20px;
+
+  }
+}

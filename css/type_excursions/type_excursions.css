@@ -49,3 +49,9 @@
     padding: 0 80px;
   }
 }
+
+@media (max-width: 500px){
+  .types_excursions_content-card{
+    padding: 0;
+  }
+}

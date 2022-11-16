@@ -9,12 +9,12 @@ inputArr.forEach((el) => {
         el.setAttribute("is-valid", "0");
         validInputArr.push(el);
     }
-})
+});
 
 console.log(validInputArr);
 
 form.addEventListener("input", inputHandler);
-button.addEventListener("click", buttonHandler);
+form.addEventListener("submit", formCheck);
 
 function inputHandler({target}) {
     if (target.hasAttribute("data-reg")) {
@@ -27,9 +27,6 @@ function inputCheck (el) {
     const inputReg = el.getAttribute("data-reg");
     const reg = new RegExp(inputReg);
     console.log(inputValue, reg)
-
-    //border
-
     if (reg.test(inputValue)) {
         el.style.border = "2px solid rgb(0, 196, 0)";
         el.setAttribute("is-valid", "1");
@@ -39,7 +36,8 @@ function inputCheck (el) {
     }
 }
 
-function buttonHandler (e) {
+function formCheck (e) {
+    e.preventDefault();
     const isAllValid = [];
     validInputArr.forEach((el) => {
         isAllValid.push(el.getAttribute("is-valid"));
@@ -48,6 +46,40 @@ function buttonHandler (e) {
         return acc && current;
     });
     if (!Boolean(Number(isValid))) {
-        e.preventDefault();
+        alert("Заполните поля правильно!");
+        return;
     }
+    FormSubmit();
+}
+
+async function FormSubmit () {
+    const data = seralizeForm(form);
+    const response = await sendData(data);
+    if (response.ok) {
+        let result = await response.json();
+        alert(result.message);
+        formReset();
+    } else {
+        alert("Код ошибки: " + response.status)
+    }
+}
+
+function seralizeForm (formNode) {
+    return new FormData(form);
+}
+
+async function sendData (data) {
+    return await fetch("./send_mail.php", {
+        method: "POST",
+        body: data,
+    });
+}
+
+function formReset () {
+    form.reset();
+    validInputArr.forEach((el) => {
+        el.setAttribute("is-valid", 0);
+        el.style.border = "none";
+        el.style = "border-bottom: 1px solid #FFFFFF";
+    });
 }
